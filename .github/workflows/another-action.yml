@@ -1,0 +1,9 @@
+name: another-action
+run-name: another-action
+on: [push]
+jobs:
+  what-is-there:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - run: ls -lah
