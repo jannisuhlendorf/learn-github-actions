@@ -6,6 +6,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - run: env
+
+      - name:  check
+        env:
+          SECRET_ENV: ${{secrets.SECRET_ENV}}
+          REPO_ENV: ${{env.REPO_ENV}}
+        run: env
 
 
