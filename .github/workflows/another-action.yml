@@ -10,7 +10,7 @@ jobs:
       - name:  check
         env:
           SECRET_ENV: ${{secrets.SECRET_ENV}}
-          REPO_ENV: ${{env.REPO_ENV}}
+          REPO_ENV: ${{vars.REPO_ENV}}
         run: env
 
 
